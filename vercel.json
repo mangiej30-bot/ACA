@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/ferreteria-el-tornillo/index.html"
+    },
+    {
+      "source": "/css/(.*)",
+      "destination": "/ferreteria-el-tornillo/css/$1"
+    },
+    {
+      "source": "/js/(.*)",
+      "destination": "/ferreteria-el-tornillo/js/$1"
+    }
+  ]
+}
