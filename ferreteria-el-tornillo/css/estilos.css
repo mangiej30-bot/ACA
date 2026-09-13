@@ -451,7 +451,7 @@ ul {
   border-left: 5px solid var(--color-accent);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
-  margin-bottom: 2.25rem;
+  margin-bottom: 0.85rem;
   max-width: 520px;
 }
 
@@ -487,6 +487,81 @@ ul {
   font-weight: 700;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-full);
+}
+
+/* Banner de contacto WhatsApp en Hero */
+.whatsapp-banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  background-color: var(--color-white);
+  border: 1.5px solid #bbf7d0;
+  border-left: 5px solid #22c55e;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2.25rem;
+  max-width: 520px;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.whatsapp-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #22c55e;
+  background-color: #f0fdf4;
+}
+
+.whatsapp-icon-box {
+  width: 42px;
+  height: 42px;
+  background-color: #25d366;
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.whatsapp-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+.whatsapp-number {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  letter-spacing: 0.02em;
+}
+
+.whatsapp-action-tag {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.whatsapp-banner:hover .whatsapp-action-tag {
+  background-color: #16a34a;
+  color: var(--color-white);
 }
 
 .hero-actions {
